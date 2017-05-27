@@ -14,6 +14,8 @@
 		1FD018BB1ED94D49001B7266 /* YYRecycleSliderDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FD018B91ED94D49001B7266 /* YYRecycleSliderDemo.xcdatamodeld */; };
 		1FD018BD1ED94D49001B7266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD018BC1ED94D49001B7266 /* Assets.xcassets */; };
 		1FD018C01ED94D49001B7266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD018BE1ED94D49001B7266 /* LaunchScreen.storyboard */; };
+		1FD018C91ED94EE6001B7266 /* YYRecycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD018C81ED94EE6001B7266 /* YYRecycleView.m */; };
+		1FD018CC1ED9786C001B7266 /* YYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD018CB1ED9786C001B7266 /* YYTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		1FD018BC1ED94D49001B7266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FD018BF1ED94D49001B7266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FD018C11ED94D49001B7266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FD018C71ED94EE6001B7266 /* YYRecycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRecycleView.h; sourceTree = "<group>"; };
+		1FD018C81ED94EE6001B7266 /* YYRecycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRecycleView.m; sourceTree = "<group>"; };
+		1FD018CA1ED9786C001B7266 /* YYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTestViewController.h; sourceTree = "<group>"; };
+		1FD018CB1ED9786C001B7266 /* YYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,10 @@
 				1FD018B11ED94D49001B7266 /* AppDelegate.m */,
 				1FD018B31ED94D49001B7266 /* ViewController.h */,
 				1FD018B41ED94D49001B7266 /* ViewController.m */,
+				1FD018C71ED94EE6001B7266 /* YYRecycleView.h */,
+				1FD018C81ED94EE6001B7266 /* YYRecycleView.m */,
+				1FD018CA1ED9786C001B7266 /* YYTestViewController.h */,
+				1FD018CB1ED9786C001B7266 /* YYTestViewController.m */,
 				1FD018B61ED94D49001B7266 /* Main.storyboard */,
 				1FD018BC1ED94D49001B7266 /* Assets.xcassets */,
 				1FD018BE1ED94D49001B7266 /* LaunchScreen.storyboard */,
@@ -113,7 +123,7 @@
 				TargetAttributes = {
 					1FD018A91ED94D49001B7266 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = Q4U65JAZSA;
+						DevelopmentTeam = 9U8V96N7M7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD018C91ED94EE6001B7266 /* YYRecycleView.m in Sources */,
 				1FD018B51ED94D49001B7266 /* ViewController.m in Sources */,
 				1FD018B21ED94D49001B7266 /* AppDelegate.m in Sources */,
 				1FD018BB1ED94D49001B7266 /* YYRecycleSliderDemo.xcdatamodeld in Sources */,
+				1FD018CC1ED9786C001B7266 /* YYTestViewController.m in Sources */,
 				1FD018AF1ED94D49001B7266 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,8 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q4U65JAZSA;
+				DEVELOPMENT_TEAM = 9U8V96N7M7;
 				INFOPLIST_FILE = YYRecycleSliderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ueb.newfrog.YYRecycleSliderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,8 +304,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q4U65JAZSA;
+				DEVELOPMENT_TEAM = 9U8V96N7M7;
 				INFOPLIST_FILE = YYRecycleSliderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ueb.newfrog.YYRecycleSliderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -318,6 +332,7 @@
 				1FD018C61ED94D49001B7266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
